@@ -1,67 +1,67 @@
-# 🚧 PRODiGY_DS_03 - NYC Traffic Accident Analysis
+# 🚧 NYC Traffic Accident Analysis
 
-This project is part of the Prodigy InfoTech Data Science Internship. The goal is to analyze traffic accident data to identify patterns related to:
+This project analyzes **New York City motor vehicle collision data** to uncover patterns and insights related to traffic accidents. Using data cleaning, exploratory data analysis (EDA), and interactive visualizations, the project identifies trends associated with road conditions, time of day, contributing factors, and accident hotspots.
 
-- 📍 Road conditions
-- ⛅ Weather or environmental effects
-- 🕒 Time of day
-- ⚠️ Accident hotspots
-- 🚗 Contributing factors
+---
 
-We use interactive visualizations (heatmaps, bar charts, and scatter plots) to highlight insights and patterns in NYC collision data.
+## 📌 Project Overview
+
+Traffic accidents are a significant public safety concern in urban environments. This project explores NYC collision data to better understand when and where accidents occur and what factors contribute to them. The insights derived from this analysis can support data-driven decision-making for improving road safety.
 
 ---
 
 ## 📁 Dataset
 
-Due to GitHub's file size limits, only a **sample** of the full dataset (2000 entries) is included in this repository.
+- **Source**: NYC Open Data – *Motor Vehicle Collisions – Crashes*
+- **Sample Dataset Included**: `sample_motor_vehicle_collisions.csv` (2,000 records)
+- **Full Dataset**: The original dataset contains over **1 million crash records**, including information on location, time, injuries, and contributing factors.
 
-📄 **Sample Dataset :
-[`sample_motor_vehicle_collisions.csv`](sample_motor_vehicle_collisions.csv)
-
-📦 **Original Full Dataset** (Too large for GitHub, hosted externally):
-[🔗 Google Drive Link (400MB)](https://drive.google.com/file/d/1ilV7JvDmOi2zhdFwlqsxjuxA5FpmXMFx/view?usp=sharing)
-
-> The original dataset contains over 1 million crash records from NYC, detailing time, location, injuries, and contributing factors.
+> ⚠️ *Note*: Due to GitHub file size limitations, only a sample of the dataset is included in this repository. The full dataset can be accessed directly from NYC Open Data.
 
 ---
 
 ## 📊 Key Visualizations
 
-- **🚦 Heatmap of crashes by weekday and hour**
-- **🗺️ Accident hotspots on NYC map**
-- **📈 Top contributing factors**
-- **🎯 Injury severity map**
+The project includes several visualizations to highlight spatial and temporal accident patterns:
+
+- 🚦 **Heatmap of Crashes by Weekday and Hour**
+- 🗺️ **Geographical Accident Hotspots (Mapbox)**
+- 📈 **Top Contributing Factors to Accidents**
+- 🎯 **Injury Severity Distribution**
+- 📊 **Temporal Trends in Collisions**
+
+These visualizations provide insights into high-risk periods and locations, as well as the most common causes of accidents.
 
 ---
 
-## 🛠️ Tools Used
+## 🧹 Data Processing
 
-- Python 🐍
-- Pandas, NumPy
-- Seaborn, Matplotlib
-- Plotly Express (Mapbox)
-- Google Colab
+Key preprocessing steps include:
 
----
-
-## 📌 Task Objectives
-
-✅ Analyze traffic accident data  
-✅ Visualize spatial and temporal patterns  
-✅ Identify contributing factors  
-✅ Share insights using interactive visualizations
+- Handling missing or inconsistent values.
+- Converting date and time fields into appropriate datetime formats.
+- Extracting temporal features such as **hour**, **day**, and **weekday**.
+- Filtering and aggregating data to support meaningful visualizations.
+- Preparing geographic coordinates for spatial analysis.
 
 ---
 
-## 👨‍💻 Author
+## 🛠️ Tools & Technologies
 
-**Ashraful Alam**  
-[🔗 LinkedIn](https://www.linkedin.com/in/ashrafulalam25/) | [🌐 GitHub](https://github.com/ashraful2512)
+| Tool/Library | Purpose |
+|-------------|---------|
+| **Python** | Programming language |
+| **pandas** | Data manipulation and cleaning |
+| **NumPy** | Numerical computations |
+| **Seaborn** | Statistical visualizations |
+| **Matplotlib** | Static plotting |
+| **Plotly Express** | Interactive and geographic visualizations |
+| **Jupyter Notebook / Google Colab** | Development environment |
 
 ---
 
-## 🔖 License
+## 🚀 How to Run the Project
 
-This project is for educational use under the Prodigy InfoTech Internship.  
-Data is publicly available from [NYC Open Data](https://opendata.cityofnewyork.us/)
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/ashraful2512/nyc-traffic-accident-analysis.git
